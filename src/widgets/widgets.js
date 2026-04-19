@@ -1,3 +1,4 @@
+import albums1001 from "./1001albums/widget";
 import adguard from "./adguard/widget";
 import apcups from "./apcups/widget";
 import arcane from "./arcane/widget";
@@ -153,6 +154,7 @@ import yourspotify from "./yourspotify/widget";
 import zabbix from "./zabbix/widget";
 
 const widgets = {
+  "1001albums": albums1001,
   adguard,
   apcups,
   arcane,
