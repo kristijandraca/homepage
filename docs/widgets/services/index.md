@@ -7,6 +7,7 @@ search:
 
 You can also find a list of all available service widgets in the sidebar navigation.
 
+- [1001 Albums Generator](1001albums.md)
 - [Adguard Home](adguard-home.md)
 - [APC UPS](apcups.md)
 - [Arcane](arcane.md)

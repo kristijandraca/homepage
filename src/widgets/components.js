@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 
 const components = {
+  "1001albums": dynamic(() => import("./1001albums/component")),
   adguard: dynamic(() => import("./adguard/component")),
   apcups: dynamic(() => import("./apcups/component")),
   arcane: dynamic(() => import("./arcane/component")),

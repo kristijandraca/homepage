@@ -439,6 +439,11 @@ export function cleanServiceGroups(groups) {
  
           // adguard
           abbreviate,
+
+          // 1001albums
+          project,
+          links,
+          history,
         } = widgetData;
 
         let fieldsList = fields;
@@ -702,6 +707,11 @@ export function cleanServiceGroups(groups) {
         }
         if (type === "adguard") {
           if (abbreviate !== undefined) widget.abbreviate = abbreviate === true || abbreviate === "true";
+        }
+        if (type === "1001albums") {
+          if (project) widget.project = project;
+          if (links) widget.links = links;
+          if (history !== undefined) widget.history = history;
         }
         return widget;
       });

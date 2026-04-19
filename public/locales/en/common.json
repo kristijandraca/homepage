@@ -1159,6 +1159,9 @@
       "time":  "Time",
       "artists": "Artists"
     },
+    "1001albums": {
+      "loading": "Loading..."
+    },
     "arcane": {
         "containers": "Containers",
         "images": "Images",
