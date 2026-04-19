@@ -62,10 +62,7 @@ describe("widgets/1001albums/component", () => {
       "href",
       `https://music.apple.com/album/${album.appleMusicId}`,
     );
-    expect(screen.getByLabelText("Tidal")).toHaveAttribute(
-      "href",
-      `https://tidal.com/browse/album/${album.tidalId}`,
-    );
+    expect(screen.getByLabelText("Tidal")).toHaveAttribute("href", `https://tidal.com/browse/album/${album.tidalId}`);
     expect(screen.getByLabelText("YouTube Music")).toHaveAttribute(
       "href",
       `https://music.youtube.com/playlist?list=${album.youtubeMusicId}`,
@@ -131,10 +128,9 @@ describe("widgets/1001albums/component", () => {
     }));
     useWidgetAPI.mockReturnValue({ data: { currentAlbum: album, history }, error: undefined });
 
-    renderWithProviders(
-      <Component service={{ widget: { type: "1001albums", project: "test", history: 2 } }} />,
-      { settings: { hideErrors: false } },
-    );
+    renderWithProviders(<Component service={{ widget: { type: "1001albums", project: "test", history: 2 } }} />, {
+      settings: { hideErrors: false },
+    });
 
     const container = screen.getByTestId("1001albums-history");
     const links = container.querySelectorAll("a");

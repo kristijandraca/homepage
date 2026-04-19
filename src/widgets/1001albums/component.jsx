@@ -1,6 +1,6 @@
 import Container from "components/services/widget/container";
-import Image from "next/image";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
 import { MdLibraryMusic } from "react-icons/md";
 import { SiApplemusic, SiSpotify, SiTidal, SiYoutubemusic } from "react-icons/si";
 

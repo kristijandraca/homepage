@@ -436,7 +436,7 @@ export function cleanServiceGroups(groups) {
 
           // grafana
           alerts,
- 
+
           // adguard
           abbreviate,
 
